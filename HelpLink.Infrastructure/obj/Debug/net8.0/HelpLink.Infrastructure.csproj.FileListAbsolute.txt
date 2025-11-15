@@ -1,0 +1,17 @@
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/bin/Debug/net8.0/HelpLink.Infrastructure.deps.json
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/bin/Debug/net8.0/HelpLink.Infrastructure.runtimeconfig.json
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/bin/Debug/net8.0/HelpLink.Infrastructure.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/bin/Debug/net8.0/HelpLink.Infrastructure.pdb
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/bin/Debug/net8.0/HelpLink.Domain.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/bin/Debug/net8.0/HelpLink.Domain.pdb
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.csproj.AssemblyReference.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.AssemblyInfoInputs.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.AssemblyInfo.cs
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.csproj.CoreCompileInputs.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.3C04C67F.Up2Date
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/refint/HelpLink.Infrastructure.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.pdb
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/HelpLink.Infrastructure.genruntimeconfig.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Infrastructure/obj/Debug/net8.0/ref/HelpLink.Infrastructure.dll

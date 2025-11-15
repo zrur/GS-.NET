@@ -1,0 +1,15 @@
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/bin/Debug/net8.0/HelpLink.Application.deps.json
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/bin/Debug/net8.0/HelpLink.Application.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/bin/Debug/net8.0/HelpLink.Application.pdb
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/bin/Debug/net8.0/HelpLink.Domain.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/bin/Debug/net8.0/HelpLink.Domain.pdb
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.csproj.AssemblyReference.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.AssemblyInfoInputs.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.AssemblyInfo.cs
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.csproj.CoreCompileInputs.cache
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.9596BACB.Up2Date
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/refint/HelpLink.Application.dll
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/HelpLink.Application.pdb
+/home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.Application/obj/Debug/net8.0/ref/HelpLink.Application.dll
