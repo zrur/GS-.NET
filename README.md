@@ -135,9 +135,11 @@ POST /api/Auth/login - OK
 GET /api/Auth/me - OK (com JWT)
 ```
 
-## Autor
+## Autores
 
-Arthur - RM558798
+Arthur Ramos dos Santos - RM: 558798
+Felipe Melo de Sousa - RM: 556099
+Robert Daniel da Silva Coimbra - RM: 555881
 FIAP - Analise e Desenvolvimento de Sistemas
 Turma 2025
 
