@@ -139,3 +139,9 @@ appsettings.Production.json
 .idea/
 *.sln.iml
 _ReSharper.Caches/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+.vs/
+.idea/
