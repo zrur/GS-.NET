@@ -11,7 +11,9 @@ public class Instituicao : BaseEntity
     public string Telefone { get; set; } = string.Empty;
     public string? Site { get; set; }
     public string? Logo { get; set; }
-    public bool Verificada { get; set; } = false;
+    public int Ativo { get; set; }   // 1 = ativo | 0 = inativo
+    public int Verificada { get; set; } // 1 = sim | 0 = não
+    
     public DateTime? DataVerificacao { get; set; }
     
     public int EnderecoId { get; set; }

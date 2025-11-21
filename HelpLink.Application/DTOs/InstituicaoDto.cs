@@ -22,7 +22,7 @@ public class InstituicaoCreateDto
     public string Email { get; set; } = string.Empty;
     public string Telefone { get; set; } = string.Empty;
     public string? Site { get; set; }
-    public int EnderecoId { get; set; }
+    public int? EnderecoId { get; set; }
 }
 
 public class InstituicaoUpdateDto

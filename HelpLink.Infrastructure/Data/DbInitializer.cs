@@ -54,8 +54,8 @@ namespace HelpLink.Infrastructure.Data
                     Telefone = "1133334444",
                     Site = "www.ongesperanca.org.br",
                     DataCriacao = DateTime.Now,
-                    Verificada = true
-                },
+                    Ativo = 1,
+                    Verificada = 0                },
                 new Instituicao
                 {
                     Nome = "Instituto Solidário",
@@ -65,8 +65,8 @@ namespace HelpLink.Infrastructure.Data
                     Telefone = "1155556666",
                     Site = "www.institutosolidario.org.br",
                     DataCriacao = DateTime.Now,
-                    Verificada = true
-                }
+                    Ativo = 1,
+                    Verificada = 0                }
             };
 
             context.Instituicoes.AddRange(instituicoes);

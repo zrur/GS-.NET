@@ -36,7 +36,7 @@ public class InstituicoesController : ControllerBase
         {
             var instituicoes = await _context.Instituicoes
                 .Include(i => i.Endereco)
-                .Where(i => i.Ativo)
+                .Where(i => i.Ativo == 1)
                 .ToListAsync();
 
             var totalRecords = instituicoes.Count;
@@ -50,6 +50,7 @@ public class InstituicoesController : ControllerBase
             );
 
             return Ok(response);
+
         }
         catch (Exception ex)
         {
@@ -71,7 +72,7 @@ public class InstituicoesController : ControllerBase
         {
             var instituicao = await _context.Instituicoes
                 .Include(i => i.Doacoes)
-                .FirstOrDefaultAsync(i => i.Id == id && i.Ativo);
+                .FirstOrDefaultAsync(i => i.Id == id && i.Ativo == 1);
 
             if (instituicao == null)
             {

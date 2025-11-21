@@ -13,6 +13,7 @@ using OpenTelemetry.Metrics;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -121,10 +122,8 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configurar Oracle Database (opcional - comentado para não dar erro)
-// builder.Services.AddDbContext<HelpLinkDbContext>(options =>
-//     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection")));
-
+builder.Services.AddDbContext<HelpLinkDbContext>(options =>
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection")));
 // Configurar API Versioning
 builder.Services.AddApiVersioning(options =>
 {
@@ -185,6 +184,14 @@ Log.Information("🔍 Health Check: /health");
 Log.Information("📚 Swagger: /swagger");
 Log.Information("💡 Login: POST /api/Auth/login");
 Log.Information("   Email: admin@helplink.com | Password: Admin@123");
+app.MapGet("/", () => Results.Ok(new
+{
+    status = "online",
+    api = "HelpLink API",
+    version = "1.0.0",
+    swagger = "/swagger",
+    health = "/health"
+}));
 
 app.Run();
 

@@ -40,7 +40,25 @@ public class HelpLinkDbContext : DbContext
             entity.Property(e => e.CodigoIBGE).HasMaxLength(10);
             entity.HasIndex(e => e.Sigla).IsUnique();
         });
+        modelBuilder.Entity<Instituicao>()
+            .Property(i => i.Ativo)
+            .HasConversion<int>();
 
+        modelBuilder.Entity<Instituicao>()
+            .Property(i => i.Verificada)
+            .HasConversion<int>();
+
+        modelBuilder.Entity<Usuario>()
+            .Property(u => u.Ativo)
+            .HasConversion<int>();
+
+        modelBuilder.Entity<Voluntario>()
+            .Property(v => v.Ativo)
+            .HasConversion<int>();
+
+        modelBuilder.Entity<Doacao>()
+            .Property(d => d.Ativo)
+            .HasConversion<int>();
         // Configurações de Estado
         modelBuilder.Entity<Estado>(entity =>
         {
