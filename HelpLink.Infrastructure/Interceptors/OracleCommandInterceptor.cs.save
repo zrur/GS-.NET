@@ -1,0 +1,26 @@
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using System.Data.Common;
+
+namespace HelpLink.Infrastructure.Interceptors;
+
+public class OracleCommandInterceptor : DbCommandInterceptor
+{
+    public override InterceptionResult<int> NonQueryExecuting(
+        DbCommand command,
+        CommandEventData eventData,
+        InterceptionResult<int> result)
+    {
+        // Substituir FALSE/TRUE por 0/1 no SQL
+        if (command.CommandText.Contains("FALSE") || command.CommandText.Contains("TRUE"))
+        {
+            command.CommandText = command.CommandText
+                .Replace("FALSE", "0")
+                .Replace("TRUE", "1")
+                .Replace("false", "0")
+                .Replace("true", "1");
+        }
+        
+        return base.NonQueryExecuting(command, eventData, result);
+    }
+}
+

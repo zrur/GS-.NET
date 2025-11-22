@@ -2,12 +2,16 @@
   "Logging": {
     "LogLevel": {
       "Default": "Information",
-      "Microsoft.EntityFrameworkCore.Database.Command": "Information",
-      "Microsoft.EntityFrameworkCore": "Information"
+      "Microsoft.EntityFrameworkCore.Database.Command": "Information"
     }
-  },
-
-  "ConnectionStrings": {
+  }
+}
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }"ConnectionStrings": {
     "OracleConnection": "User Id=rm558798;Password=fiap24;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))(CONNECT_DATA=(SID=ORCL)));"
   },
   "UseInMemoryDatabase": false,
@@ -24,7 +28,7 @@
       "Override": {
         "Microsoft": "Warning",
         "Microsoft.Hosting.Lifetime": "Information",
-        "Microsoft.EntityFrameworkCore": "Information"
+        "Microsoft.EntityFrameworkCore": "Warning"
       }
     }
   },

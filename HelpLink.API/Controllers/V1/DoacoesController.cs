@@ -35,10 +35,10 @@ public class DoacoesController : ControllerBase
                 .Include(d => d.Usuario)
                 .Include(d => d.Instituicao)
                 .Include(d => d.DoacaoItens)
-                    .ThenInclude(di => di.Item)
-                        .ThenInclude(i => i.Categoria)
+                .ThenInclude(di => di.Item)
+                .ThenInclude(i => i.Categoria)
                 .Include(d => d.Agendamento)
-                .Where(d => d.Ativo);
+                .Where(d => d.Ativo == 1);
 
             if (!string.IsNullOrEmpty(status))
             {
@@ -107,9 +107,9 @@ public class DoacoesController : ControllerBase
                 .Include(d => d.Usuario)
                 .Include(d => d.Instituicao)
                 .Include(d => d.DoacaoItens)
-                    .ThenInclude(di => di.Item)
-                        .ThenInclude(i => i.Categoria)
-                .Where(d => d.InstituicaoId == instituicaoId && d.Ativo);
+                .ThenInclude(di => di.Item)
+                .ThenInclude(i => i.Categoria)
+                .Where(d => d.InstituicaoId == instituicaoId && d.Ativo == 1);
 
             var totalRecords = await query.CountAsync();
             var doacoes = await query

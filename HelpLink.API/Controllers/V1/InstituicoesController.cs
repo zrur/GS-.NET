@@ -36,7 +36,8 @@ namespace HelpLink.API.Controllers.V1
                         .ThenInclude(e => e.Bairro)
                             .ThenInclude(b => b.Cidade)
                                 .ThenInclude(c => c.Estado)
-                    .Where(i => i.Ativo == 1);
+                    .Where(i => i.Ativo == 1)
+                    .AsQueryable();
 
                 if (!string.IsNullOrEmpty(cidade))
                 {
@@ -58,7 +59,9 @@ namespace HelpLink.API.Controllers.V1
                         Telefone = i.Telefone,
                         Site = i.Site,
                         Logo = i.Logo,
-                        Verificada = i.Verificada == 1,
+
+                        // SEM BOOL!!!
+                        Verificada = i.Verificada,
 
                         Endereco = i.Endereco == null ? null : new EnderecoDto
                         {
@@ -74,7 +77,6 @@ namespace HelpLink.API.Controllers.V1
                             Longitude = i.Endereco.Longitude
                         }
                     })
-
                     .ToListAsync();
 
                 int totalPages = (int)Math.Ceiling(totalRecords / (double)pageSize);
@@ -96,7 +98,6 @@ namespace HelpLink.API.Controllers.V1
 
         // ============================ GET BY ID ============================
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(ApiResponse<InstituicaoDto>), StatusCodes.Status200OK)]
         public async Task<ActionResult<ApiResponse<InstituicaoDto>>> GetInstituicao(int id)
         {
             try
@@ -128,7 +129,8 @@ namespace HelpLink.API.Controllers.V1
                     Telefone = instituicao.Telefone,
                     Site = instituicao.Site,
                     Logo = instituicao.Logo,
-                    Verificada = instituicao.Verificada ==1,
+                    Verificada = instituicao.Verificada,
+
                     Endereco = instituicao.Endereco == null ? null : new EnderecoDto
                     {
                         Id = instituicao.Endereco.Id,
@@ -144,12 +146,7 @@ namespace HelpLink.API.Controllers.V1
                     }
                 };
 
-                return Ok(new ApiResponse<InstituicaoDto>
-                {
-                    Success = true,
-                    Message = "Instituição encontrada com sucesso",
-                    Data = dto
-                });
+                return Ok(ApiResponse<InstituicaoDto>.SuccessResponse(dto, "Instituição encontrada com sucesso"));
             }
             catch (Exception ex)
             {
@@ -165,39 +162,14 @@ namespace HelpLink.API.Controllers.V1
 
         // ============================ POST ============================
         [HttpPost]
-        [ProducesResponseType(typeof(ApiResponse<InstituicaoDto>), StatusCodes.Status201Created)]
         public async Task<ActionResult<ApiResponse<InstituicaoDto>>> CreateInstituicao(
             [FromBody] InstituicaoCreateDto dto)
         {
             try
             {
-                Endereco? endereco = null;
-
-                if (dto.EnderecoId.HasValue)
-                {
-                    endereco = await _context.Enderecos.FindAsync(dto.EnderecoId.Value);
-
-                    if (endereco == null)
-                    {
-                        return BadRequest(new ApiResponse<InstituicaoDto>
-                        {
-                            Success = false,
-                            Message = "Endereço não encontrado",
-                            Data = null!,
-                            Errors = new List<string> { "O endereço informado não existe" }
-                        });
-                    }
-                }
-
                 if (await _context.Instituicoes.AnyAsync(i => i.CNPJ == dto.CNPJ))
                 {
-                    return BadRequest(new ApiResponse<InstituicaoDto>
-                    {
-                        Success = false,
-                        Message = "CNPJ já cadastrado",
-                        Data = null!,
-                        Errors = new List<string> { "Já existe uma instituição com este CNPJ" }
-                    });
+                    return BadRequest(ApiResponse<string>.ErrorResponse("Já existe uma instituição com este CNPJ"));
                 }
 
                 var instituicao = new Instituicao
@@ -208,36 +180,47 @@ namespace HelpLink.API.Controllers.V1
                     Email = dto.Email,
                     Telefone = dto.Telefone,
                     Site = dto.Site,
-                    DataCriacao = DateTime.UtcNow,
-                    Ativo =1 
+                    EnderecoId = 0,
+                    Ativo = 1,
+                    Verificada = 0,
+                    DataCriacao = DateTime.UtcNow
                 };
 
                 _context.Instituicoes.Add(instituicao);
                 await _context.SaveChangesAsync();
 
-                return CreatedAtAction(nameof(GetInstituicao), new { id = instituicao.Id }, new ApiResponse<InstituicaoDto>
+                var retorno = new InstituicaoDto
                 {
-                    Success = true,
-                    Message = "Instituição criada com sucesso",
-                    Data = new InstituicaoDto
-                    {
-                        Id = instituicao.Id,
-                        Nome = instituicao.Nome
-                    }
-                });
+                    Id = instituicao.Id,
+                    Nome = instituicao.Nome,
+                    CNPJ = instituicao.CNPJ,
+                    Verificada = instituicao.Verificada
+                };
+
+                return CreatedAtAction(nameof(GetInstituicao), new { id = instituicao.Id },
+                    ApiResponse<InstituicaoDto>.SuccessResponse(retorno, "Instituição criada com sucesso"));
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Erro ao criar instituição");
-
-                return StatusCode(500, new ApiResponse<string>
-                {
-                    Success = false,
-                    Message = ex.Message,
-                    Data = null!
-                });
+                return StatusCode(500, ApiResponse<string>.ErrorResponse(ex.InnerException?.Message ?? ex.Message));
             }
         }
+
+        // ============================ DELETE (LOGICO) ============================
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteInstituicao(int id)
+        {
+            var instituicao = await _context.Instituicoes.FindAsync(id);
+
+            if (instituicao == null)
+                return NotFound(ApiResponse<string>.ErrorResponse("Instituição não encontrada"));
+
+            instituicao.Ativo = 0;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(ApiResponse<string>.SuccessResponse(null!, "Instituição desativada com sucesso"));        }
 
         // ============================ PAGINATION ============================
         private IEnumerable<Link> GeneratePaginationLinks(int pageNumber, int pageSize, int totalPages, string? cidade)

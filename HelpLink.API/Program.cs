@@ -13,7 +13,6 @@ using OpenTelemetry.Metrics;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using System.Text;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -123,8 +122,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddDbContext<HelpLinkDbContext>(options =>
-    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection")));
-// Configurar API Versioning
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"))
+        .AddInterceptors(new HelpLink.Infrastructure.Interceptors.OracleCommandInterceptor()));
 builder.Services.AddApiVersioning(options =>
 {
     options.DefaultApiVersion = new ApiVersion(1, 0);
