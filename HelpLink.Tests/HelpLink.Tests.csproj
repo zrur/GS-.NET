@@ -18,5 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HelpLink.API\HelpLink.API.csproj" />
+    <ProjectReference Include="..\HelpLink.Domain\HelpLink.Domain.csproj" />
+    <ProjectReference Include="..\HelpLink.Infrastructure\HelpLink.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

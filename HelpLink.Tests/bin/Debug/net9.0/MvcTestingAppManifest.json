@@ -1,0 +1,6 @@
+{
+  "HelpLink.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/arthur\/RiderProjects\/HelpLink\/HelpLink1\/HelpLink\/HelpLink.API",
+  "HelpLink.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/arthur\/RiderProjects\/HelpLink\/HelpLink1\/HelpLink\/HelpLink.Application",
+  "HelpLink.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/arthur\/RiderProjects\/HelpLink\/HelpLink1\/HelpLink\/HelpLink.Domain",
+  "HelpLink.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/arthur\/RiderProjects\/HelpLink\/HelpLink1\/HelpLink\/HelpLink.Infrastructure"
+}

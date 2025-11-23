@@ -89,10 +89,49 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "HelpLink API",
-        Version = "v1",
-        Description = "API para plataforma de doações HelpLink com Autenticação JWT e Observabilidade Completa"
+        Title = "HelpLink - API de Doações",
+        Version = "v1.0.0",
+        Description =
+            @"## 🌟 Plataforma de Doações e Gestão Social
+
+**Conectando quem precisa com quem pode ajudar**
+
+---
+
+### Como Começar
+
+1. Faça login em `/api/Auth/login` com:
+   - `admin@helplink.com` | `Admin@123`
+2. Copie o token retornado
+3. Clique no botão 🔒 **Authorize** acima
+4. Cole o token no formato: `Bearer SEU_TOKEN_AQUI`
+5. Explore os endpoints e teste as funcionalidades!
+
+---
+
+💡 **Dica:** Use os endpoints de **Health Check** para monitorar o status da API em tempo real!",
+
+        Contact = new OpenApiContact
+        {
+            Name = "Equipe HelpLink",
+            Email = "contato@helplink.com",
+            Url = new Uri("https://github.com/helplink/api")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "MIT License",
+            Url = new Uri("https://opensource.org/licenses/MIT")
+        }
     });
+
+    
+    // Habilita comentários XML para documentação
+    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+    {
+        c.IncludeXmlComments(xmlPath);
+    }
 
     // Configurar JWT no Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -102,7 +141,13 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Insira o token JWT no formato: Bearer {seu token}"
+        Description = @"<div style='font-family: monospace; background: #f1f5f9; padding: 12px; border-radius: 6px; margin: 8px 0;'>
+            <p style='margin: 0 0 8px 0; color: #334155;'><strong>🔐 Autenticação JWT</strong></p>
+            <p style='margin: 0 0 4px 0; color: #64748b;'>1. Faça login em <code>/api/Auth/login</code></p>
+            <p style='margin: 0 0 4px 0; color: #64748b;'>2. Copie o valor do campo 'token' da resposta</p>
+            <p style='margin: 0 0 8px 0; color: #64748b;'>3. Cole aqui no formato: <code style='background: #e2e8f0; padding: 2px 4px; border-radius: 3px;'>Bearer SEU_TOKEN</code></p>
+            <p style='margin: 0; color: #ef4444;'><strong>⚠️</strong> Não esqueça da palavra 'Bearer' seguida de um espaço!</p>
+            </div>"
     });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -148,8 +193,26 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "HelpLink API v1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "🤝 HelpLink API v1.0");
     c.RoutePrefix = "swagger";
+    c.DocumentTitle = "HelpLink - API de Doações";
+    
+    // Personalizações estéticas
+    c.InjectStylesheet("/swagger-ui/custom.css");
+    c.DefaultModelsExpandDepth(-1); // Oculta models por padrão
+    c.DefaultModelExpandDepth(1);
+    c.DefaultModelRendering(Swashbuckle.AspNetCore.SwaggerUI.ModelRendering.Model);
+    c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
+    c.EnableFilter();
+    c.ShowExtensions();
+    c.EnableValidator();
+    c.SupportedSubmitMethods(Swashbuckle.AspNetCore.SwaggerUI.SubmitMethod.Get, 
+                           Swashbuckle.AspNetCore.SwaggerUI.SubmitMethod.Post, 
+                           Swashbuckle.AspNetCore.SwaggerUI.SubmitMethod.Put, 
+                           Swashbuckle.AspNetCore.SwaggerUI.SubmitMethod.Delete);
+    
+    // CSS customizado inline como fallback
+    c.InjectJavascript("/swagger-ui/custom.js");
 });
 
 // ============ HEALTH CHECK ENDPOINTS ============
@@ -171,11 +234,25 @@ app.MapHealthChecks("/health/live", new HealthCheckOptions
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
 
+// ============ SERVIR ARQUIVOS ESTÁTICOS PARA SWAGGER ============
+app.UseStaticFiles();
+
 // ============ AUTENTICAÇÃO E AUTORIZAÇÃO ============
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// ============ INICIALIZAÇÃO DO BANCO DE DADOS ============
+// DbInitializer temporariamente desabilitado devido a problema bool/int
+/*
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<HelpLinkDbContext>();
+    DbInitializer.Initialize(context);
+    Log.Information("✅ Banco de dados inicializado com dados de teste");
+}
+*/
 
 Log.Information("🚀 HelpLink API iniciada com JWT + Observabilidade!");
 Log.Information("🔐 Autenticação JWT ativa");

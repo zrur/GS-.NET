@@ -7,16 +7,75 @@ namespace HelpLink.Infrastructure.Data
     {
         public static void Initialize(HelpLinkDbContext context)
         {
-            // Garante que o banco foi criado
             context.Database.EnsureCreated();
 
-            // Verifica se já existem dados
             if (context.Usuarios.Any())
-            {
-                return; // BD já foi populado
-            }
+                return; // já populado
 
-            // Seed de Usuários
+            // 🔹 País
+            var pais = new Pais
+            {
+                Nome = "Brasil",
+                Sigla = "BR",
+                CodigoIBGE = "76",
+                DataCriacao = DateTime.Now,
+                Ativo = 1
+            };
+            context.Paises.Add(pais);
+            context.SaveChanges();
+
+            // 🔹 Estado
+            var estado = new Estado
+            {
+                Nome = "São Paulo",
+                Sigla = "SP",
+                CodigoIBGE = "35",
+                PaisId = pais.Id,
+                DataCriacao = DateTime.Now,
+                Ativo = 1
+            };
+            context.Estados.Add(estado);
+            context.SaveChanges();
+
+            // 🔹 Cidade
+            var cidade = new Cidade
+            {
+                Nome = "São Paulo",
+                CodigoIBGE = "3550308",
+                EstadoId = estado.Id,
+                DataCriacao = DateTime.Now,
+                Ativo = 1
+            };
+            context.Cidades.Add(cidade);
+            context.SaveChanges();
+
+            // 🔹 Bairro
+            var bairro = new Bairro
+            {
+                Nome = "Centro",
+                CEPInicial = "01000-000",
+                CEPFinal = "01099-999",
+                CidadeId = cidade.Id,
+                DataCriacao = DateTime.Now,
+                Ativo = 1
+            };
+            context.Bairros.Add(bairro);
+            context.SaveChanges();
+
+            // 🔹 Endereço
+            var endereco = new Endereco
+            {
+                Logradouro = "Rua das Flores",
+                Numero = "100",
+                CEP = "01010-000",
+                BairroId = bairro.Id,
+                DataCriacao = DateTime.Now,
+                Ativo = 1
+            };
+            context.Enderecos.Add(endereco);
+            context.SaveChanges();
+
+            // 🔹 Usuários
             var usuarios = new Usuario[]
             {
                 new Usuario
@@ -26,7 +85,8 @@ namespace HelpLink.Infrastructure.Data
                     Telefone = "11987654321",
                     CPF = "123.456.789-00",
                     DataNascimento = new DateTime(1990, 5, 15),
-                    DataCriacao = DateTime.Now
+                    DataCriacao = DateTime.Now,
+                    Ativo = 1
                 },
                 new Usuario
                 {
@@ -35,14 +95,14 @@ namespace HelpLink.Infrastructure.Data
                     Telefone = "11876543210",
                     CPF = "987.654.321-00",
                     DataNascimento = new DateTime(1985, 8, 20),
-                    DataCriacao = DateTime.Now
+                    DataCriacao = DateTime.Now,
+                    Ativo = 1
                 }
             };
-
             context.Usuarios.AddRange(usuarios);
             context.SaveChanges();
 
-            // Seed de Instituições
+            // 🔹 Instituições (usando EnderecoId válido)
             var instituicoes = new Instituicao[]
             {
                 new Instituicao
@@ -55,7 +115,9 @@ namespace HelpLink.Infrastructure.Data
                     Site = "www.ongesperanca.org.br",
                     DataCriacao = DateTime.Now,
                     Ativo = 1,
-                    Verificada = 0                },
+                    Verificada = 0,
+                    EnderecoId = endereco.Id
+                },
                 new Instituicao
                 {
                     Nome = "Instituto Solidário",
@@ -66,13 +128,14 @@ namespace HelpLink.Infrastructure.Data
                     Site = "www.institutosolidario.org.br",
                     DataCriacao = DateTime.Now,
                     Ativo = 1,
-                    Verificada = 0                }
+                    Verificada = 0,
+                    EnderecoId = endereco.Id
+                }
             };
-
             context.Instituicoes.AddRange(instituicoes);
             context.SaveChanges();
 
-            // Seed de Doações
+            // 🔹 Doações
             var doacoes = new Doacao[]
             {
                 new Doacao
@@ -94,7 +157,6 @@ namespace HelpLink.Infrastructure.Data
                     DataCriacao = DateTime.Now.AddDays(-5)
                 }
             };
-
             context.Doacoes.AddRange(doacoes);
             context.SaveChanges();
         }

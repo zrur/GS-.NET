@@ -1,0 +1,48 @@
+{
+  "login": {
+    "url": "POST http://localhost:5023/api/Auth/login",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "email": "admin@helplink.com",
+      "password": "Admin@123"
+    }
+  },
+  "criar_instituicao": {
+    "url": "POST http://localhost:5023/api/v1/Instituicoes",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer {TOKEN_DO_LOGIN}"
+    },
+    "body": {
+      "nome": "Instituto Futuro do Trabalho",
+      "cnpj": "12.345.678/0001-90",
+      "descricao": "Organização dedicada à capacitação profissional para o mercado de trabalho digital",
+      "email": "contato@institutofuturo.org.br",
+      "telefone": "11999999999",
+      "site": "https://institutofuturo.org.br",
+      "enderecoId": null
+    }
+  },
+  "listar_instituicoes": {
+    "url": "GET http://localhost:5023/api/v1/Instituicoes?pageNumber=1&pageSize=10&cidade=São Paulo",
+    "headers": {
+      "Authorization": "Bearer {TOKEN_DO_LOGIN}"
+    }
+  },
+  "obter_instituicao": {
+    "url": "GET http://localhost:5023/api/v1/Instituicoes/16",
+    "headers": {
+      "Authorization": "Bearer {TOKEN_DO_LOGIN}"
+    }
+  },
+  "health_check": {
+    "url": "GET http://localhost:5023/health",
+    "headers": {}
+  },
+  "swagger": {
+    "url": "GET http://localhost:5023/swagger",
+    "headers": {}
+  }
+}

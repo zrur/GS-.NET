@@ -169,12 +169,16 @@ public class HelpLinkDbContext : DbContext
             .HasColumnType("NUMBER(1)")
             .HasConversion(v => v, v => v);
         
+        // Configurar EnderecoId como nullable
+        entity.Property(e => e.EnderecoId)
+            .IsRequired(false);
+        
         entity.HasIndex(e => e.CNPJ).IsUnique();
         
         entity.HasOne(e => e.Endereco)
             .WithMany(en => en.Instituicoes)
             .HasForeignKey(e => e.EnderecoId)
-            .OnDelete(DeleteBehavior.Restrict);
+            .OnDelete(DeleteBehavior.SetNull);
     });
 
     // Configurações de Categoria

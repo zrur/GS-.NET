@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelpLink.API</name>
+    </assembly>
+    <members>
+        <member name="T:HelpLink.API.Controllers.AuthController">
+            <summary>
+            🔐 Controller de autenticação e autorização
+            </summary>
+            <remarks>
+            Este controller permite:
+            - 🔑 Login com email e senha
+            - 🎯 Geração de tokens JWT
+            - 🔒 Validação de autenticação
+            </remarks>
+        </member>
+        <member name="M:HelpLink.API.Controllers.AuthController.Login(HelpLink.Application.DTOs.LoginDto)">
+            <summary>
+            🔑 Realiza login e retorna token JWT
+            </summary>
+            <param name="loginDto">Credenciais de login</param>
+            <returns>Token JWT para autenticação</returns>
+            <remarks>
+            Credenciais de teste:
+            
+                POST /api/Auth/login
+                {
+                  "email": "admin@helplink.com",
+                  "password": "Admin@123"
+                }
+            
+            </remarks>
+            <response code="200">Login realizado com sucesso, token retornado</response>
+            <response code="401">Email ou senha inválidos</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:HelpLink.API.Controllers.AuthController.GetCurrentUser">
+            <summary>
+            🔒 Endpoint protegido para teste de autenticação
+            </summary>
+            <returns>Informações do usuário autenticado</returns>
+            <remarks>
+            Este endpoint requer autenticação JWT.
+            Use o token obtido no login no cabeçalho Authorization.
+            </remarks>
+            <response code="200">Usuário autenticado com sucesso</response>
+            <response code="401">Token inválido ou ausente</response>
+        </member>
+        <member name="T:HelpLink.API.Controllers.V1.DoacoesController">
+            <summary>
+            🤝 Controller para gerenciamento de doações
+            </summary>
+            <remarks>
+            Este controller permite:
+            - 📈 Listar doações com paginação e filtros
+            - 🔍 Buscar doações por instituição
+            - 📊 Visualizar relatórios de doações
+            </remarks>
+        </member>
+        <member name="M:HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(System.Int32,System.Int32,System.String)">
+            <summary>
+            📈 Lista todas as doações ativas com paginação
+            </summary>
+            <param name="pageNumber">Número da página (padrão: 1)</param>
+            <param name="pageSize">Itens por página (padrão: 10)</param>
+            <param name="status">Filtrar por status da doação</param>
+            <returns>Lista paginada de doações</returns>
+            <response code="200">Lista de doações retornada com sucesso</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:HelpLink.API.Controllers.V1.DoacoesController.GetDoacoesByInstituicao(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            🏥 Lista doações de uma instituição específica
+            </summary>
+            <param name="instituicaoId">ID da instituição</param>
+            <param name="pageNumber">Número da página (padrão: 1)</param>
+            <param name="pageSize">Itens por página (padrão: 10)</param>
+            <returns>Lista paginada de doações da instituição</returns>
+            <response code="200">Lista de doações da instituição retornada com sucesso</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="T:HelpLink.API.Controllers.V1.InstituicoesController">
+            <summary>
+            🏥 Controller para gerenciamento de instituições
+            </summary>
+            <remarks>
+            Este controller permite:
+            - 📈 Listar instituições com paginação e filtros
+            - 🔍 Buscar instituição por ID
+            - ➕ Criar nova instituição
+            - 🗑️ Desativar instituição (exclusão lógica)
+            </remarks>
+        </member>
+        <member name="M:HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(System.Int32,System.Int32,System.String)">
+            <summary>
+            📈 Lista todas as instituições ativas com paginação
+            </summary>
+            <param name="pageNumber">Número da página (padrão: 1)</param>
+            <param name="pageSize">Itens por página (padrão: 10)</param>
+            <param name="cidade">Filtrar por nome da cidade</param>
+            <returns>Lista paginada de instituições</returns>
+            <response code="200">Lista de instituições retornada com sucesso</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao(System.Int32)">
+            <summary>
+            🔍 Busca uma instituição pelo ID
+            </summary>
+            <param name="id">ID da instituição</param>
+            <returns>Dados detalhados da instituição</returns>
+            <response code="200">Instituição encontrada</response>
+            <response code="404">Instituição não encontrada</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:HelpLink.API.Controllers.V1.InstituicoesController.CreateInstituicao(HelpLink.Application.DTOs.InstituicaoCreateDto)">
+            <summary>
+            ➕ Cria uma nova instituição
+            </summary>
+            <param name="dto">Dados da instituição a ser criada</param>
+            <returns>Dados da instituição criada</returns>
+            <remarks>
+            Exemplo de requisição:
+            
+                POST /api/v1/instituicoes
+                {
+                  "nome": "Instituto Exemplo",
+                  "cnpj": "12.345.678/0001-90",
+                  "email": "contato@instituto-exemplo.org",
+                  "telefone": "(11) 99999-9999",
+                  "descricao": "Instituto dedicado a ajudar crianças",
+                  "enderecoId": null,
+                  "ativo": 1
+                }
+            
+            </remarks>
+            <response code="201">Instituição criada com sucesso</response>
+            <response code="400">Dados inválidos ou CNPJ já existe</response>
+            <response code="500">Erro interno do servidor</response>
+        </member>
+        <member name="M:HelpLink.API.Controllers.V1.InstituicoesController.DeleteInstituicao(System.Int32)">
+            <summary>
+            🗑️ Desativa uma instituição (exclusão lógica)
+            </summary>
+            <param name="id">ID da instituição a ser desativada</param>
+            <returns>Confirmação da desativação</returns>
+            <response code="200">Instituição desativada com sucesso</response>
+            <response code="404">Instituição não encontrada</response>
+        </member>
+        <member name="M:HelpLink.HelpLink.HelpLink.API.Controllers.V2.InstituicoesController.GetInstituicoesProximas(System.Decimal,System.Decimal,System.Decimal,System.Int32,System.Int32)">
+            <summary>
+            [V2] Obtém instituições próximas com base em coordenadas geográficas
+            </summary>
+        </member>
+        <member name="M:HelpLink.HelpLink.HelpLink.API.Controllers.V2.InstituicoesController.GetEstatisticas(System.Int32)">
+            <summary>
+            [V2] Obtém estatísticas de uma instituição
+            </summary>
+        </member>
+    </members>
+</doc>

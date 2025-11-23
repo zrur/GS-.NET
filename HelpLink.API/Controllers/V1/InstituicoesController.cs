@@ -3,13 +3,25 @@ using HelpLink.Domain.Entities;
 using HelpLink.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace HelpLink.API.Controllers.V1
 {
+    /// <summary>
+    /// 🏥 Controller para gerenciamento de instituições
+    /// </summary>
+    /// <remarks>
+    /// Este controller permite:
+    /// - 📈 Listar instituições com paginação e filtros
+    /// - 🔍 Buscar instituição por ID
+    /// - ➕ Criar nova instituição
+    /// - 🗑️ Desativar instituição (exclusão lógica)
+    /// </remarks>
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [Produces("application/json")]
+    [Tags("🏥 Instituições")]
     public class InstituicoesController : ControllerBase
     {
         private readonly HelpLinkDbContext _context;
@@ -22,8 +34,18 @@ namespace HelpLink.API.Controllers.V1
         }
 
         // ============================ GET ALL ============================
+        /// <summary>
+        /// 📈 Lista todas as instituições ativas com paginação
+        /// </summary>
+        /// <param name="pageNumber">Número da página (padrão: 1)</param>
+        /// <param name="pageSize">Itens por página (padrão: 10)</param>
+        /// <param name="cidade">Filtrar por nome da cidade</param>
+        /// <returns>Lista paginada de instituições</returns>
+        /// <response code="200">Lista de instituições retornada com sucesso</response>
+        /// <response code="500">Erro interno do servidor</response>
         [HttpGet]
         [ProducesResponseType(typeof(PagedResponse<InstituicaoDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<PagedResponse<InstituicaoDto>>> GetInstituicoes(
             [FromQuery] int pageNumber = 1,
             [FromQuery] int pageSize = 10,
@@ -97,7 +119,18 @@ namespace HelpLink.API.Controllers.V1
         }
 
         // ============================ GET BY ID ============================
+        /// <summary>
+        /// 🔍 Busca uma instituição pelo ID
+        /// </summary>
+        /// <param name="id">ID da instituição</param>
+        /// <returns>Dados detalhados da instituição</returns>
+        /// <response code="200">Instituição encontrada</response>
+        /// <response code="404">Instituição não encontrada</response>
+        /// <response code="500">Erro interno do servidor</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(ApiResponse<InstituicaoDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse<InstituicaoDto>), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ApiResponse<InstituicaoDto>>> GetInstituicao(int id)
         {
             try
@@ -161,54 +194,113 @@ namespace HelpLink.API.Controllers.V1
         }
 
         // ============================ POST ============================
+        /// <summary>
+        /// ➕ Cria uma nova instituição
+        /// </summary>
+        /// <param name="dto">Dados da instituição a ser criada</param>
+        /// <returns>Dados da instituição criada</returns>
+        /// <remarks>
+        /// Exemplo de requisição:
+        /// 
+        ///     POST /api/v1/instituicoes
+        ///     {
+        ///       "nome": "Instituto Exemplo",
+        ///       "cnpj": "12.345.678/0001-90",
+        ///       "email": "contato@instituto-exemplo.org",
+        ///       "telefone": "(11) 99999-9999",
+        ///       "descricao": "Instituto dedicado a ajudar crianças",
+        ///       "enderecoId": null,
+        ///       "ativo": 1
+        ///     }
+        /// 
+        /// </remarks>
+        /// <response code="201">Instituição criada com sucesso</response>
+        /// <response code="400">Dados inválidos ou CNPJ já existe</response>
+        /// <response code="500">Erro interno do servidor</response>
         [HttpPost]
-        public async Task<ActionResult<ApiResponse<InstituicaoDto>>> CreateInstituicao(
-            [FromBody] InstituicaoCreateDto dto)
+        [ProducesResponseType(typeof(ApiResponse<InstituicaoDto>), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status500InternalServerError)]
+public async Task<ActionResult<ApiResponse<InstituicaoDto>>> CreateInstituicao(
+    [FromBody] InstituicaoCreateDto dto)
+{
+    try
+    {
+        // Confere se já existe instituição com o mesmo CNPJ
+        if (await _context.Instituicoes.AnyAsync(i => i.CNPJ == dto.CNPJ))
         {
-            try
+            return BadRequest(ApiResponse<string>.ErrorResponse("Já existe uma instituição com este CNPJ"));
+        }
+
+        // ✅ AQUI ENTRA O ? (HasValue) — VALIDA O ENDEREÇO
+        if (dto.EnderecoId.HasValue)
+        {
+            bool enderecoExiste = await _context.Enderecos
+                .AnyAsync(e => e.Id == dto.EnderecoId.Value);
+
+            if (!enderecoExiste)
             {
-                if (await _context.Instituicoes.AnyAsync(i => i.CNPJ == dto.CNPJ))
-                {
-                    return BadRequest(ApiResponse<string>.ErrorResponse("Já existe uma instituição com este CNPJ"));
-                }
-
-                var instituicao = new Instituicao
-                {
-                    Nome = dto.Nome,
-                    CNPJ = dto.CNPJ,
-                    Descricao = dto.Descricao,
-                    Email = dto.Email,
-                    Telefone = dto.Telefone,
-                    Site = dto.Site,
-                    EnderecoId = 0,
-                    Ativo = 1,
-                    Verificada = 0,
-                    DataCriacao = DateTime.UtcNow
-                };
-
-                _context.Instituicoes.Add(instituicao);
-                await _context.SaveChangesAsync();
-
-                var retorno = new InstituicaoDto
-                {
-                    Id = instituicao.Id,
-                    Nome = instituicao.Nome,
-                    CNPJ = instituicao.CNPJ,
-                    Verificada = instituicao.Verificada
-                };
-
-                return CreatedAtAction(nameof(GetInstituicao), new { id = instituicao.Id },
-                    ApiResponse<InstituicaoDto>.SuccessResponse(retorno, "Instituição criada com sucesso"));
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Erro ao criar instituição");
-                return StatusCode(500, ApiResponse<string>.ErrorResponse(ex.InnerException?.Message ?? ex.Message));
+                return BadRequest(ApiResponse<string>.ErrorResponse("Endereço informado não existe"));
             }
         }
 
+        // Agora sim cria a instituição
+        var instituicao = new Instituicao
+        {
+            Nome = dto.Nome,
+            CNPJ = dto.CNPJ,
+            Descricao = dto.Descricao,
+            Email = dto.Email,
+            Telefone = dto.Telefone,
+            Site = dto.Site,
+
+            // ✅ Usa o EnderecoId do DTO (pode ser null)
+            EnderecoId = dto.EnderecoId,
+
+            Ativo = 1,
+            Verificada = 0,
+            DataCriacao = DateTime.UtcNow
+        };
+
+        _context.Instituicoes.Add(instituicao);
+        await _context.SaveChangesAsync();
+
+        var retorno = new InstituicaoDto
+        {
+            Id = instituicao.Id,
+            Nome = instituicao.Nome,
+            CNPJ = instituicao.CNPJ,
+            Verificada = instituicao.Verificada
+        };
+
+        return CreatedAtAction(
+            nameof(GetInstituicao),
+            new { id = instituicao.Id },
+            ApiResponse<InstituicaoDto>.SuccessResponse(retorno, "Instituição criada com sucesso")
+        );
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Erro ao criar instituição");
+        return StatusCode(
+            500,
+            ApiResponse<string>.ErrorResponse(ex.InnerException?.Message ?? ex.Message)
+        );
+    }
+}
+
+
         // ============================ DELETE (LOGICO) ============================
+        /// <summary>
+        /// 🗑️ Desativa uma instituição (exclusão lógica)
+        /// </summary>
+        /// <param name="id">ID da instituição a ser desativada</param>
+        /// <returns>Confirmação da desativação</returns>
+        /// <response code="200">Instituição desativada com sucesso</response>
+        /// <response code="404">Instituição não encontrada</response>
         [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteInstituicao(int id)
         {
             var instituicao = await _context.Instituicoes.FindAsync(id);

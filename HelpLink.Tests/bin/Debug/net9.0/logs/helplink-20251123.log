@@ -1,0 +1,1434 @@
+2025-11-23 11:22:35.865 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:35.865 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:35.865 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:35.936 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:35.936 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:35.936 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:35.936 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:35.936 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:35.935 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:35.935 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:35.938 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:35.938 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:35.939 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:35.939 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:35.939 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:35.939 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:35.939 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:35.939 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:35.966 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:35.966 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:35.966 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:36.601 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:22:36.599 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes/99999 - null null
+2025-11-23 11:22:36.604 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/doacoes?pageNumber=1&pageSize=10 - null null
+2025-11-23 11:22:36.766 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:36.768 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:36.766 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:36.929 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:22:36.930 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:22:36.930 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API)'
+2025-11-23 11:22:37.078 [INF] Route matched with {action = "GetDoacoes", controller = "Doacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.DoacaoDto]]] GetDoacoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.DoacoesController (HelpLink.API).
+2025-11-23 11:22:37.078 [INF] Route matched with {action = "GetInstituicao", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.ApiResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicao(Int32) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:22:37.401 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:22:37.467 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 956.4743ms
+2025-11-23 11:22:37.654 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:22:37.656 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:22:37.659 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:22:37.671 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 4.8338ms
+2025-11-23 11:22:38.048 [INF] Request starting HTTP/1.1 GET http://localhost/health/live - null null
+2025-11-23 11:22:38.081 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:22:38.107 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:22:38.107 [INF] Request finished HTTP/1.1 GET http://localhost/health/live - 200 null application/json 58.9254ms
+2025-11-23 11:22:38.211 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:22:38.212 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:22:38.217 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:22:38.224 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 12.5002ms
+2025-11-23 11:22:38.244 [INF] Request starting HTTP/1.1 GET http://localhost/health/ready - null null
+2025-11-23 11:22:38.245 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:22:38.255 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:22:38.255 [INF] Request finished HTTP/1.1 GET http://localhost/health/ready - 200 null application/json 11.9612ms
+2025-11-23 11:22:38.361 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:22:38.363 [INF] Executing action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:22:38.488 [ERR] Erro ao buscar instituição
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao(Int32 id) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 105
+2025-11-23 11:22:38.483 [ERR] Erro ao obter doações
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(Int32 pageNumber, Int32 pageSize, String status) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/DoacoesController.cs:line 34
+2025-11-23 11:22:38.588 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 170.8685ms.
+2025-11-23 11:22:38.589 [INF] Executed action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 175.2232ms.
+2025-11-23 11:22:38.635 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:22:38.637 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:22:38.710 [INF] Executed action HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) in 1595.4733ms
+2025-11-23 11:22:38.718 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:22:38.711 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API) in 1605.3156ms
+2025-11-23 11:22:38.718 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API)'
+2025-11-23 11:22:38.722 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:22:38.722 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:22:38.835 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/doacoes?pageNumber=1&pageSize=10 - 500 null text/plain; charset=utf-8 2267.3449ms
+2025-11-23 11:22:38.841 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes/99999 - 500 null text/plain; charset=utf-8 2327.0869ms
+2025-11-23 11:22:39.020 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:39.064 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:39.067 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:39.068 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:39.068 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:39.068 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:39.061 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:39.070 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:39.070 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:39.072 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:39.072 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:39.073 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:39.073 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:39.073 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:39.143 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/doacoes?pageNumber=1&pageSize=10 - null null
+2025-11-23 11:22:39.150 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:39.157 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes?pageNumber=1&pageSize=5 - null null
+2025-11-23 11:22:39.160 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:22:39.163 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:39.164 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:22:39.177 [INF] Route matched with {action = "GetInstituicoes", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:22:39.180 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:22:39.188 [INF] Route matched with {action = "GetDoacoes", controller = "Doacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.DoacaoDto]]] GetDoacoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.DoacoesController (HelpLink.API).
+2025-11-23 11:22:39.196 [INF] Executing action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:22:39.195 [ERR] Erro ao obter instituições
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 34
+2025-11-23 11:22:39.199 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 18.4678ms.
+2025-11-23 11:22:39.200 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:22:39.197 [ERR] Erro ao obter doações
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(Int32 pageNumber, Int32 pageSize, String status) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/DoacoesController.cs:line 34
+2025-11-23 11:22:39.204 [INF] Executed action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.1581ms.
+2025-11-23 11:22:39.205 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:22:39.206 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 25.4023ms
+2025-11-23 11:22:39.206 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:22:39.207 [INF] Executed action HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) in 18.8367ms
+2025-11-23 11:22:39.207 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:22:39.207 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:22:39.213 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:22:39.263 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes?pageNumber=1&pageSize=5 - 500 null text/plain; charset=utf-8 105.971ms
+2025-11-23 11:22:39.286 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/doacoes?pageNumber=1&pageSize=10 - 500 null text/plain; charset=utf-8 142.7506ms
+2025-11-23 11:22:39.711 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:39.767 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:39.767 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:39.767 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:39.768 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:39.768 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:39.768 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:39.817 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes?pageNumber=1&pageSize=10 - null null
+2025-11-23 11:22:39.825 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:39.826 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:22:39.835 [INF] Route matched with {action = "GetInstituicoes", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:22:39.840 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:22:39.841 [ERR] Erro ao obter instituições
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 34
+2025-11-23 11:22:39.842 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.7049ms.
+2025-11-23 11:22:39.843 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:22:39.848 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 12.9834ms
+2025-11-23 11:22:39.848 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:22:39.849 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:22:39.864 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes?pageNumber=1&pageSize=10 - 500 null text/plain; charset=utf-8 47.1929ms
+2025-11-23 11:22:39.958 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:22:39.973 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:22:39.973 [INF] 🔍 Health Check: /health
+2025-11-23 11:22:39.973 [INF] 📚 Swagger: /swagger
+2025-11-23 11:22:39.973 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:22:39.973 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:22:39.974 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:22:40.038 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes?pageNumber=1&pageSize=10 - null null
+2025-11-23 11:22:40.045 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:22:40.049 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:22:40.061 [INF] Route matched with {action = "GetInstituicoes", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:22:40.065 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:22:40.069 [ERR] Erro ao obter instituições
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 34
+2025-11-23 11:22:40.072 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.5482ms.
+2025-11-23 11:22:40.073 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:22:40.077 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 15.726ms
+2025-11-23 11:22:40.078 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:22:40.078 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:22:40.094 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes?pageNumber=1&pageSize=10 - 500 null text/plain; charset=utf-8 56.1146ms
+2025-11-23 11:35:26.575 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:35:26.576 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:35:26.665 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:35:26.665 [INF] 🔍 Health Check: /health
+2025-11-23 11:35:26.665 [INF] 📚 Swagger: /swagger
+2025-11-23 11:35:26.665 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:35:26.665 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:35:26.575 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:35:26.667 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:35:26.667 [INF] 🔍 Health Check: /health
+2025-11-23 11:35:26.667 [INF] 📚 Swagger: /swagger
+2025-11-23 11:35:26.667 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:35:26.667 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:35:26.668 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:35:26.668 [INF] 🔍 Health Check: /health
+2025-11-23 11:35:26.668 [INF] 📚 Swagger: /swagger
+2025-11-23 11:35:26.668 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:35:26.668 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:35:26.700 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:35:26.700 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:35:26.700 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:35:27.455 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:35:27.586 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:35:27.677 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:35:28.032 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:35:28.089 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 733.3986ms
+2025-11-23 11:35:28.262 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:35:28.292 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:35:28.315 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:35:28.316 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 55.4223ms
+2025-11-23 11:35:28.415 [INF] Request starting HTTP/1.1 GET http://localhost/health/live - null null
+2025-11-23 11:35:28.440 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:35:28.448 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:35:28.448 [INF] Request finished HTTP/1.1 GET http://localhost/health/live - 200 null application/json 33.243ms
+2025-11-23 11:35:28.491 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:35:28.491 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:35:28.498 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:35:28.498 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 7.2739ms
+2025-11-23 11:35:28.515 [INF] Request starting HTTP/1.1 GET http://localhost/health/ready - null null
+2025-11-23 11:35:28.517 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:35:28.523 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:35:28.523 [INF] Request finished HTTP/1.1 GET http://localhost/health/ready - 200 null application/json 7.7694ms
+35:28.278 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:35:28.574 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes/99999 - null null
+2025-11-23 11:35:28.588 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:35:28.631 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10506: Signature validation failed. The user defined 'Delegate' specified on TokenValidationParameters did not return a 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken', but returned a 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken' when validating token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. If you are using ASP.NET Core 8 or later, see https://learn.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/8.0/securitytoken-events for more details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureUsingDelegates(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-23 11:35:28.637 [INF] Bearer was not authenticated. Failure message: IDX10506: Signature validation failed. The user defined 'Delegate' specified on TokenValidationParameters did not return a 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken', but returned a 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken' when validating token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. If you are using ASP.NET Core 8 or later, see https://learn.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/8.0/securitytoken-events for more details.
+2025-11-23 11:35:28.637 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API)'
+2025-11-23 11:35:28.672 [INF] Route matched with {action = "GetInstituicao", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.ApiResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicao(Int32) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:35:28.695 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:35:28.709 [ERR] Erro ao buscar instituição
+System.InvalidOperationException: Services for database providers 'Oracle.EntityFrameworkCore', 'Microsoft.EntityFrameworkCore.InMemory' have been registered in the service provider. Only a single database provider can be registered in a service provider. If possible, ensure that Entity Framework is managing its service provider by removing the call to 'UseInternalServiceProvider'. Otherwise, consider conditionally registering the database provider, or maintaining one service provider per database provider.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include[TEntity,TProperty](IQueryable`1 source, Expression`1 navigationPropertyPath)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao(Int32 id) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 105
+2025-11-23 11:35:28.722 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.2409ms.
+2025-11-23 11:35:28.730 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:35:28.755 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API) in 75.2165ms
+2025-11-23 11:35:28.755 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicao (HelpLink.API)'
+2025-11-23 11:35:28.757 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes/99999 - 500 null application/json; charset=utf-8 183.0235ms
+2025-11-23 11:35:28.843 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:35:28.853 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:35:28.853 [INF] 🔍 Health Check: /health
+2025-11-23 11:35:28.853 [INF] 📚 Swagger: /swagger
+2025-11-23 11:35:28.853 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:35:28.853 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:35:28.854 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:36:30.031 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:36:30.031 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:36:30.223 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:36:30.224 [INF] 🔍 Health Check: /health
+2025-11-23 11:36:30.224 [INF] 📚 Swagger: /swagger
+2025-11-23 11:36:30.224 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:36:30.224 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:36:30.031 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:36:30.030 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:36:30.226 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:36:30.226 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:36:30.226 [INF] 🔍 Health Check: /health
+2025-11-23 11:36:30.226 [INF] 🔍 Health Check: /health
+2025-11-23 11:36:30.226 [INF] 📚 Swagger: /swagger
+2025-11-23 11:36:30.226 [INF] 📚 Swagger: /swagger
+2025-11-23 11:36:30.226 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:36:30.226 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:36:30.226 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:36:30.227 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:36:30.227 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:36:30.230 [INF] 🔍 Health Check: /health
+2025-11-23 11:36:30.233 [INF] 📚 Swagger: /swagger
+2025-11-23 11:36:30.233 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:36:30.234 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:36:30.285 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:36:30.285 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:36:30.281 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:36:30.282 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:36:31.198 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:36:31.193 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/doacoes - null null
+2025-11-23 11:36:31.197 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:36:31.405 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:36:31.407 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:36:31.408 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:36:31.518 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:36:31.520 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:36:31.522 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:36:31.676 [INF] Route matched with {action = "GetDoacoes", controller = "Doacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.DoacaoDto]]] GetDoacoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.DoacoesController (HelpLink.API).
+2025-11-23 11:36:31.842 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:36:31.844 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:36:31.943 [INF] Executing action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:36:31.870 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 819.464ms
+2025-11-23 11:36:31.872 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 739.6821ms
+2025-11-23 11:36:32.124 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:36:32.126 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:36:32.133 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:36:32.151 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 27.7178ms
+2025-11-23 11:36:32.249 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:36:32.261 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:36:32.265 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:36:32.266 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 16.6175ms
+2025-11-23 11:36:32.334 [INF] Request starting HTTP/1.1 GET http://localhost/health/live - null null
+2025-11-23 11:36:32.344 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:36:32.355 [INF] Executed endpoin2025-11-23 11:36:36.335 [ERR] 2025-11-23 11:36:36.335613 ThreadID:10  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.I2025-11-23 11:36:40.745 [ERR] Erro ao obter doações
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(Int32 pageNumber, Int32 pageSize, String status) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/DoacoesController.cs:line 48
+2025-11-23 11:36:40.750 [INF] Executed action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8799.761ms.
+2025-11-23 11:36:40.769 [INF] Executed action HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) in 9088.9068ms
+2025-11-23 11:36:40.770 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:36:40.773 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:36:40.816 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/doacoes - 500 null text/plain; charset=utf-8 9687.2678ms
+2025-11-23 11:36:40.822 [INF] Request starting HTTP/1.1 POST http://localhost/api/Auth/login - application/json; charset=utf-8 53
+2025-11-23 11:36:40.831 [INF] Executing endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 11:36:40.834 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HelpLink.Application.DTOs.LoginDto) on controller HelpLink.API.Controllers.AuthController (HelpLink.API).
+2025-11-23 11:36:40.859 [INF] Executing action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:36:40.864 [INF] Executed action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.5195ms.
+2025-11-23 11:36:40.876 [INF] Executed action HelpLink.API.Controllers.AuthController.Login (HelpLink.API) in 41.3884ms
+2025-11-23 11:36:40.876 [INF] Executed endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 11:36:40.877 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastru2025-11-23 11:36:40.958 [ERR] 2025-11-23 11:36:40.958223 ThreadID:10  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 11:36:40.959 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at 2025-11-23 11:36:40.963 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 60.388ms.
+2025-11-23 11:36:40.967 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 66.0157ms
+2025-11-23 11:36:40.967 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:36:40.968 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:36:40.981 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes - 500 null text/plain; charset=utf-8 93.5697ms
+2025-11-23 11:36:40.991 [INF] Request starting HTTP/1.1 GET http://localhost/swagger - null null
+2025-11-23 11:36:40.993 [INF] Request finished HTTP/1.1 GET http://localhost/swagger - 301 null null 2.6766ms
+2025-11-23 11:36:41.001 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2025-11-23 11:36:41.099 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 98.6663ms
+2025-11-23 11:36:41.103 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2025-11-23 11:36:41.103 [INF] Executing endpoint 'HTTP: GET /'
+2025-11-23 11:36:41.133 [INF] Executed endpoint 'HTTP: GET /'
+2025-11-23 11:36:41.133 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.<WriteAsJsonAsync>g__WriteAsJsonAsyncSlow|5_0[TValue](HttpResponse response, TValue value, JsonTypeInfo`1 jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:36:41.140 [INF] Request finished HTTP/1.1 GET http://localhost/ - 500 null text/plain; charset=utf-8 37.1321ms
+ Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 47
+2025-11-23 11:36:40.964 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:36:41.128 [INF] Setting HTTP status code 200.
+2025-11-23 11:36:41.131 [INF] Writing value of type '<>f__AnonymousType5`5' as Json.
+2025-11-23 11:37:04.711 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:37:04.870 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:37:04.871 [INF] 🔍 Health Check: /health
+2025-11-23 11:37:04.871 [INF] 📚 Swagger: /swagger
+2025-11-23 11:37:04.871 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:37:04.871 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:37:04.715 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:37:04.873 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:37:04.873 [INF] 🔍 Health Check: /health
+2025-11-23 11:37:04.873 [INF] 📚 Swagger: /swagger
+2025-11-23 11:37:04.873 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:37:04.873 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:37:04.931 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:37:04.933 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:37:05.554 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:37:05.554 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/doacoes - null null
+2025-11-23 11:37:05.660 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:37:05.662 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:37:05.729 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:37:05.729 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:05.791 [INF] Route matched with {action = "GetDoacoes", controller = "Doacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.DoacaoDto]]] GetDoacoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.DoacoesController (HelpLink.API).
+2025-11-23 11:37:05.883 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:05.896 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 399.6118ms
+2025-11-23 11:37:06.009 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:37:06.023 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:06.028 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:06.030 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 20.9757ms
+2025-11-23 11:37:06.039 [INF] Request starting HTTP/1.1 GET http://localhost/health/ready - null null
+2025-11-23 11:37:06.047 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:06.048 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:06.048 [INF] Request finished HTTP/1.1 GET http://localhost/health/ready - 200 null application/json 9.337ms
+2025-11-23 11:37:06.065 [INF] Request starting HTTP/1.1 GET http://localhost/health/live - null null
+2025-11-23 11:37:06.066 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:06.067 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:06.068 [INF] Request finished HTTP/1.1 GET http://localhost/health/live - 200 null application/json 3.0907ms
+2025-11-23 11:37:06.076 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:37:06.077 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:06.079 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:06.079 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 3.2218ms
+2025-11-23 11:37:06.167 [INF] Executing action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:37:08.208 [ERR] 2025-11-23 11:37:08.205641 ThreadID:16  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 11:37:08.216 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-11-23 11:37:08.218 [ERR] Erro ao obter doações
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(Int32 pageNumber, Int32 pageSize, String status) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/DoacoesController.cs:line 48
+2025-11-23 11:37:08.225 [INF] Executed action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2052.3582ms.
+2025-11-23 11:37:08.236 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:37:08.247 [INF] Executed action HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) in 2450.4349ms
+2025-11-23 11:37:08.248 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:37:08.249 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:08.289 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/doacoes - 500 null text/plain; charset=utf-8 2796.1203ms
+2025-11-23 11:37:08.303 [INF] Request starting HTTP/1.1 POST http://localhost/api/Auth/login - application/json; charset=utf-8 53
+2025-11-23 11:37:08.315 [INF] Executing endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 11:37:08.322 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HelpLink.Application.DTOs.LoginDto) on controller HelpLink.API.Controllers.AuthController (HelpLink.API).
+2025-11-23 11:37:08.349 [INF] Executing action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:37:08.375 [INF] Login bem-sucedido para: admin@helplink.com
+2025-11-23 11:37:08.375 [INF] Executed action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 26.1893ms.
+2025-11-23 11:37:08.376 [INF] Executing OkObjectResult, writing value of type 'HelpLink.Application.DTOs.LoginResponseDto'.
+2025-11-23 11:37:08.382 [INF] Executed action HelpLink.API.Controllers.AuthController.Login (HelpLink.API) in 59.3786ms
+2025-11-23 11:37:08.382 [INF] Executed endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 11:37:08.382 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:08.387 [INF] Request finished HTTP/1.1 POST http://localhost/api/Auth/login - 500 null text/plain; charset=utf-8 84.9751ms
+2025-11-23 11:37:08.392 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes - null null
+2025-11-23 11:37:08.397 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:37:08.405 [INF] Route matched with {action = "GetInstituicoes", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:37:08.408 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:37:08.453 [ERR] 2025-11-23 11:37:08.453129 ThreadID:22  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 11:37:08.454 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-11-23 11:37:08.455 [ERR] Erro ao obter instituições
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 47
+2025-11-23 11:37:08.457 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49.0696ms.
+2025-11-23 11:37:08.458 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:37:08.463 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 57.421ms
+2025-11-23 11:37:08.463 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:37:08.463 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:08.479 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes - 500 null text/plain; charset=utf-8 87.1173ms
+2025-11-23 11:37:08.483 [INF] Request starting HTTP/1.1 GET http://localhost/swagger - null null
+2025-11-23 11:37:08.484 [INF] Request finished HTTP/1.1 GET http://localhost/swagger - 301 null null 1.5947ms
+2025-11-23 11:37:08.489 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2025-11-23 11:37:08.582 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 93.1977ms
+2025-11-23 11:37:08.585 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2025-11-23 11:37:08.586 [INF] Executing endpoint 'HTTP: GET /'
+2025-11-23 11:37:08.591 [INF] Setting HTTP status code 200.
+2025-11-23 11:37:08.593 [INF] Writing value of type '<>f__AnonymousType5`5' as Json.
+2025-11-23 11:37:08.594 [INF] Executed endpoint 'HTTP: GET /'
+2025-11-23 11:37:08.594 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.<WriteAsJsonAsync>g__WriteAsJsonAsyncSlow|5_0[TValue](HttpResponse response, TValue value, JsonTypeInfo`1 jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:08.598 [INF] Request finished HTTP/1.1 GET http://localhost/ - 500 null text/plain; charset=utf-8 12.2458ms
+2025-11-23 11:37:50.781 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:37:50.778 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 11:37:50.862 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:37:50.862 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 11:37:50.862 [INF] 🔍 Health Check: /health
+2025-11-23 11:37:50.862 [INF] 🔍 Health Check: /health
+2025-11-23 11:37:50.863 [INF] 📚 Swagger: /swagger
+2025-11-23 11:37:50.863 [INF] 📚 Swagger: /swagger
+2025-11-23 11:37:50.863 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:37:50.864 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:37:50.863 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 11:37:50.865 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 11:37:50.893 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:37:50.891 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 11:37:51.438 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:37:51.433 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/doacoes - null null
+2025-11-23 11:37:51.558 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:37:51.558 [WRN] Failed to determine the https port for redirect.
+2025-11-23 11:37:51.656 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:51.658 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:37:51.729 [INF] Route matched with {action = "GetDoacoes", controller = "Doacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.DoacaoDto]]] GetDoacoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.DoacoesController (HelpLink.API).
+2025-11-23 11:37:51.809 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:51.818 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 467.0127ms
+2025-11-23 11:37:51.898 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:37:51.904 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:51.908 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:51.910 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 12.4273ms
+2025-11-23 11:37:51.918 [INF] Request starting HTTP/1.1 GET http://localhost/health/ready - null null
+2025-11-23 11:37:51.933 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:51.936 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:51.937 [INF] Request finished HTTP/1.1 GET http://localhost/health/ready - 200 null application/json 20.6904ms
+2025-11-23 11:37:51.954 [INF] Request starting HTTP/1.1 GET http://localhost/health/live - null null
+2025-11-23 11:37:51.955 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:51.956 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:51.957 [INF] Request finished HTTP/1.1 GET http://localhost/health/live - 200 null application/json 2.9509ms
+2025-11-23 11:37:51.962 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 11:37:51.962 [INF] Executing endpoint 'Health checks'
+2025-11-23 11:37:51.963 [INF] Executed endpoint 'Health checks'
+2025-11-23 11:37:51.963 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 1.5496ms
+2025-11-23 11:37:52.076 [INF] Executing action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:37:54.048 [ERR] 2025-11-23 11:37:54.046299 ThreadID:21  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 11:37:54.056 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-11-23 11:37:54.058 [ERR] Erro ao obter doações
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(Int32 pageNumber, Int32 pageSize, String status) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/DoacoesController.cs:line 48
+2025-11-23 11:37:54.065 [INF] Executed action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1982.7798ms.
+2025-11-23 11:37:54.073 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:37:54.086 [INF] Executed action HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) in 2344.4618ms
+2025-11-23 11:37:54.086 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 11:37:54.087 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:54.130 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/doacoes - 500 null text/plain; charset=utf-8 2780.9748ms
+2025-11-23 11:37:54.141 [INF] Request starting HTTP/1.1 POST http://localhost/api/Auth/login - application/json; charset=utf-8 53
+2025-11-23 11:37:54.150 [INF] Executing endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 11:37:54.154 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HelpLink.Application.DTOs.LoginDto) on controller HelpLink.API.Controllers.AuthController (HelpLink.API).
+2025-11-23 11:37:54.182 [INF] Executing action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:37:54.212 [INF] Login bem-sucedido para: admin@helplink.com
+2025-11-23 11:37:54.213 [INF] Executed action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.0561ms.
+2025-11-23 11:37:54.214 [INF] Executing OkObjectResult, writing value of type 'HelpLink.Application.DTOs.LoginResponseDto'.
+2025-11-23 11:37:54.221 [INF] Executed action HelpLink.API.Controllers.AuthController.Login (HelpLink.API) in 66.783ms
+2025-11-23 11:37:54.222 [INF] Executed endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 11:37:54.222 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:54.228 [INF] Request finished HTTP/1.1 POST http://localhost/api/Auth/login - 500 null text/plain; charset=utf-8 87.6948ms
+2025-11-23 11:37:54.233 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes - null null
+2025-11-23 11:37:54.238 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:37:54.245 [INF] Route matched with {action = "GetInstituicoes", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 11:37:54.248 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 11:37:54.302 [ERR] 2025-11-23 11:37:54.302934 ThreadID:16  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 11:37:54.304 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-11-23 11:37:54.305 [ERR] Erro ao obter instituições
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 47
+2025-11-23 11:37:54.308 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 60.1868ms.
+2025-11-23 11:37:54.309 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 11:37:54.314 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 68.8533ms
+2025-11-23 11:37:54.315 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 11:37:54.315 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:54.342 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes - 500 null text/plain; charset=utf-8 109.7352ms
+2025-11-23 11:37:54.351 [INF] Request starting HTTP/1.1 GET http://localhost/swagger - null null
+2025-11-23 11:37:54.353 [INF] Request finished HTTP/1.1 GET http://localhost/swagger - 301 null null 2.1538ms
+2025-11-23 11:37:54.357 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2025-11-23 11:37:54.432 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 74.4841ms
+2025-11-23 11:37:54.435 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2025-11-23 11:37:54.436 [INF] Executing endpoint 'HTTP: GET /'
+2025-11-23 11:37:54.440 [INF] Setting HTTP status code 200.
+2025-11-23 11:37:54.442 [INF] Writing value of type '<>f__AnonymousType5`5' as Json.
+2025-11-23 11:37:54.444 [INF] Executed endpoint 'HTTP: GET /'
+2025-11-23 11:37:54.444 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.<WriteAsJsonAsync>g__WriteAsJsonAsyncSlow|5_0[TValue](HttpResponse response, TValue value, JsonTypeInfo`1 jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 11:37:54.447 [INF] Request finished HTTP/1.1 GET http://localhost/ - 500 null text/plain; charset=utf-8 11.7267ms
+2025-11-23 12:16:23.582 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 12:16:23.580 [INF] 🚀 HelpLink API iniciada com JWT + Observabilidade!
+2025-11-23 12:16:23.778 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 12:16:23.779 [INF] 🔍 Health Check: /health
+2025-11-23 12:16:23.780 [INF] 📚 Swagger: /swagger
+2025-11-23 12:16:23.780 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 12:16:23.780 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 12:16:23.781 [INF] 🔐 Autenticação JWT ativa
+2025-11-23 12:16:23.781 [INF] 🔍 Health Check: /health
+2025-11-23 12:16:23.781 [INF] 📚 Swagger: /swagger
+2025-11-23 12:16:23.781 [INF] 💡 Login: POST /api/Auth/login
+2025-11-23 12:16:23.781 [INF]    Email: admin@helplink.com | Password: Admin@123
+2025-11-23 12:16:23.835 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 12:16:23.835 [INF] User profile is available. Using '/home/arthur/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-23 12:16:24.481 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 12:16:24.481 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/doacoes - null null
+2025-11-23 12:16:24.603 [WRN] Failed to determine the https port for redirect.
+2025-11-23 12:16:24.603 [WRN] Failed to determine the https port for redirect.
+2025-11-23 12:16:24.670 [INF] Executing endpoint 'Health checks'
+2025-11-23 12:16:24.670 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 12:16:24.761 [INF] Route matched with {action = "GetDoacoes", controller = "Doacoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.DoacaoDto]]] GetDoacoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.DoacoesController (HelpLink.API).
+2025-11-23 12:16:24.844 [INF] Executed endpoint 'Health checks'
+2025-11-23 12:16:24.874 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 483.4048ms
+2025-11-23 12:16:25.028 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 12:16:25.050 [INF] Executing endpoint 'Health checks'
+2025-11-23 12:16:25.075 [INF] Executed endpoint 'Health checks'
+2025-11-23 12:16:25.076 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 57.5563ms
+2025-11-23 12:16:25.130 [INF] Request starting HTTP/1.1 GET http://localhost/health/ready - null null
+2025-11-23 12:16:25.145 [INF] Executing endpoint 'Health checks'
+2025-11-23 12:16:25.152 [INF] Executed endpoint 'Health checks'
+2025-11-23 12:16:25.153 [INF] Request finished HTTP/1.1 GET http://localhost/health/ready - 200 null application/json 22.3057ms
+2025-11-23 12:16:25.200 [INF] Request starting HTTP/1.1 GET http://localhost/health/live - null null
+2025-11-23 12:16:25.204 [INF] Executing endpoint 'Health checks'
+2025-11-23 12:16:25.207 [INF] Executed endpoint 'Health checks'
+2025-11-23 12:16:25.207 [INF] Request finished HTTP/1.1 GET http://localhost/health/live - 200 null application/json 7.0956ms
+2025-11-23 12:16:25.236 [INF] Request starting HTTP/1.1 GET http://localhost/health - null null
+2025-11-23 12:16:25.239 [INF] Executing endpoint 'Health checks'
+2025-11-23 12:16:25.244 [INF] Executed endpoint 'Health checks'
+2025-11-23 12:16:25.245 [INF] Request finished HTTP/1.1 GET http://localhost/health - 200 null application/json 8.544ms
+2025-11-23 12:16:25.427 [INF] Executing action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 12:16:28.768 [ERR] 2025-11-23 12:16:28.763712 ThreadID:19  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 12:16:28.777 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-11-23 12:16:28.780 [ERR] Erro ao obter doações
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes(Int32 pageNumber, Int32 pageSize, String status) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/DoacoesController.cs:line 68
+2025-11-23 12:16:28.812 [INF] Executed action method HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3362.0936ms.
+2025-11-23 12:16:28.831 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 12:16:28.863 [INF] Executed action HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API) in 4083.9485ms
+2025-11-23 12:16:28.866 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.DoacoesController.GetDoacoes (HelpLink.API)'
+2025-11-23 12:16:28.867 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 12:16:28.959 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/doacoes - 500 null text/plain; charset=utf-8 4570.3863ms
+2025-11-23 12:16:29.069 [INF] Request starting HTTP/1.1 POST http://localhost/api/Auth/login - application/json; charset=utf-8 53
+2025-11-23 12:16:29.123 [INF] Executing endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 12:16:29.137 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HelpLink.Application.DTOs.LoginDto) on controller HelpLink.API.Controllers.AuthController (HelpLink.API).
+2025-11-23 12:16:29.184 [INF] Executing action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API) - Validation state: "Valid"
+2025-11-23 12:16:29.301 [INF] Login bem-sucedido para: admin@helplink.com
+2025-11-23 12:16:29.302 [INF] Executed action method HelpLink.API.Controllers.AuthController.Login (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 117.5504ms.
+2025-11-23 12:16:29.304 [INF] Executing OkObjectResult, writing value of type 'HelpLink.Application.DTOs.LoginResponseDto'.
+2025-11-23 12:16:29.342 [INF] Executed action HelpLink.API.Controllers.AuthController.Login (HelpLink.API) in 202.7412ms
+2025-11-23 12:16:29.343 [INF] Executed endpoint 'HelpLink.API.Controllers.AuthController.Login (HelpLink.API)'
+2025-11-23 12:16:29.346 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 12:16:29.354 [INF] Request finished HTTP/1.1 POST http://localhost/api/Auth/login - 500 null text/plain; charset=utf-8 284.7483ms
+2025-11-23 12:16:29.402 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/instituicoes - null null
+2025-11-23 12:16:29.420 [INF] Executing endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 12:16:29.436 [INF] Route matched with {action = "GetInstituicoes", controller = "Instituicoes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[HelpLink.Application.DTOs.PagedResponse`1[HelpLink.Application.DTOs.InstituicaoDto]]] GetInstituicoes(Int32, Int32, System.String) on controller HelpLink.API.Controllers.V1.InstituicoesController (HelpLink.API).
+2025-11-23 12:16:29.444 [INF] Executing action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) - Validation state: "Valid"
+2025-11-23 12:16:29.561 [ERR] 2025-11-23 12:16:29.561312 ThreadID:19  (ERROR)   OracleExecutionStrategy.ExecuteAsync() :  System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+2025-11-23 12:16:29.563 [ERR] An exception occurred while iterating over the results of a query for context type 'HelpLink.Infrastructure.Data.HelpLinkDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-11-23 12:16:29.566 [ERR] Erro ao obter instituições
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Boolean'.
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleBoolTypeMapping.GenerateNonNullSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateProviderValueSqlLiteral(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping.GenerateSqlLiteral(Object value)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSqlBinary(SqlBinaryExpression sqlBinaryExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Oracle.EntityFrameworkCore.Query.Sql.Internal.OracleQuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationalCommandResolverExtensions.RentAndPopulateRelationalCommand(RelationalCommandResolver relationalCommandResolver, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes(Int32 pageNumber, Int32 pageSize, String cidade) in /home/arthur/RiderProjects/HelpLink/HelpLink1/HelpLink/HelpLink.API/Controllers/V1/InstituicoesController.cs:line 69
+2025-11-23 12:16:29.569 [INF] Executed action method HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 124.5166ms.
+2025-11-23 12:16:29.570 [INF] Executing ObjectResult, writing value of type 'HelpLink.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-23 12:16:29.578 [INF] Executed action HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API) in 142.1288ms
+2025-11-23 12:16:29.579 [INF] Executed endpoint 'HelpLink.API.Controllers.V1.InstituicoesController.GetInstituicoes (HelpLink.API)'
+2025-11-23 12:16:29.579 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 12:16:29.589 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/instituicoes - 500 null text/plain; charset=utf-8 187.6131ms
+2025-11-23 12:16:29.608 [INF] Request starting HTTP/1.1 GET http://localhost/swagger - null null
+2025-11-23 12:16:29.614 [INF] Request finished HTTP/1.1 GET http://localhost/swagger - 301 null null 5.674ms
+2025-11-23 12:16:29.625 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - null null
+2025-11-23 12:16:29.778 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - 200 null text/html;charset=utf-8 152.9563ms
+2025-11-23 12:16:29.797 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2025-11-23 12:16:29.798 [INF] Executing endpoint 'HTTP: GET /'
+2025-11-23 12:16:29.827 [INF] Setting HTTP status code 200.
+2025-11-23 12:16:29.832 [INF] Writing value of type '<>f__AnonymousType5`5' as Json.
+2025-11-23 12:16:29.834 [INF] Executed endpoint 'HTTP: GET /'
+2025-11-23 12:16:29.835 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The PipeWriter 'ResponseBodyPipeWriter' does not implement PipeWriter.UnflushedBytes.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_PipeWriterDoesNotImplementUnflushedBytes(PipeWriter pipeWriter)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.<WriteAsJsonAsync>g__WriteAsJsonAsyncSlow|5_0[TValue](HttpResponse response, TValue value, JsonTypeInfo`1 jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteResultWriteResponse(IResult result, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 12:16:29.840 [INF] Request finished HTTP/1.1 GET http://localhost/ - 500 null text/plain; charset=utf-8 43.3043ms

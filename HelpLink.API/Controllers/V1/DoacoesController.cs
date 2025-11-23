@@ -7,10 +7,20 @@ using Microsoft.EntityFrameworkCore;
 namespace HelpLink.API.Controllers.V1;
 
 
+/// <summary>
+/// 🤝 Controller para gerenciamento de doações
+/// </summary>
+/// <remarks>
+/// Este controller permite:
+/// - 📈 Listar doações com paginação e filtros
+/// - 🔍 Buscar doações por instituição
+/// - 📊 Visualizar relatórios de doações
+/// </remarks>
 [ApiController]
 [ApiVersion("1.0")]
 [Route("api/v{version:apiVersion}/[controller]")]
 [Produces("application/json")]
+[Tags("🤝 Doações")]
 public class DoacoesController : ControllerBase
 {
     private readonly HelpLinkDbContext _context;
@@ -22,8 +32,18 @@ public class DoacoesController : ControllerBase
         _logger = logger;
     }
 
+    /// <summary>
+    /// 📈 Lista todas as doações ativas com paginação
+    /// </summary>
+    /// <param name="pageNumber">Número da página (padrão: 1)</param>
+    /// <param name="pageSize">Itens por página (padrão: 10)</param>
+    /// <param name="status">Filtrar por status da doação</param>
+    /// <returns>Lista paginada de doações</returns>
+    /// <response code="200">Lista de doações retornada com sucesso</response>
+    /// <response code="500">Erro interno do servidor</response>
     [HttpGet]
     [ProducesResponseType(typeof(PagedResponse<DoacaoDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<PagedResponse<DoacaoDto>>> GetDoacoes(
         [FromQuery] int pageNumber = 1,
         [FromQuery] int pageSize = 10,
@@ -94,8 +114,18 @@ public class DoacoesController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// 🏥 Lista doações de uma instituição específica
+    /// </summary>
+    /// <param name="instituicaoId">ID da instituição</param>
+    /// <param name="pageNumber">Número da página (padrão: 1)</param>
+    /// <param name="pageSize">Itens por página (padrão: 10)</param>
+    /// <returns>Lista paginada de doações da instituição</returns>
+    /// <response code="200">Lista de doações da instituição retornada com sucesso</response>
+    /// <response code="500">Erro interno do servidor</response>
     [HttpGet("instituicao/{instituicaoId}")]
     [ProducesResponseType(typeof(PagedResponse<DoacaoDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<PagedResponse<DoacaoDto>>> GetDoacoesByInstituicao(
         int instituicaoId,
         [FromQuery] int pageNumber = 1,

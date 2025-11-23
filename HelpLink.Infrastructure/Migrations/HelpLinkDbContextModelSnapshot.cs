@@ -515,7 +515,7 @@ namespace HelpLink.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("NVARCHAR2(100)");
 
-                    b.Property<int>("EnderecoId")
+                    b.Property<int?>("EnderecoId")
                         .HasColumnType("NUMBER(10)");
 
                     b.Property<string>("Logo")
@@ -862,8 +862,7 @@ namespace HelpLink.Infrastructure.Migrations
                     b.HasOne("HelpLink.Domain.Entities.Endereco", "Endereco")
                         .WithMany("Instituicoes")
                         .HasForeignKey("EnderecoId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Endereco");
                 });
